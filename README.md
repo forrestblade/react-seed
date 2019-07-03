@@ -16,7 +16,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please try to adhere to [semantic commit messages](https://seesparkbox.com/foundry/semantic_commit_messages).
 
-Lint your code with [standard js](https://seesparkbox.com/foundry/semantic_commit_messages)
+Lint your code with [standard js](https://standardjs.com/)
 
 Please make sure to update tests as appropriate.
 
