@@ -6,10 +6,13 @@ export class App extends Component {
 
   render () {
     return (
-      <div>
-        <button onClick={() => this.props.decrement()}>-</button>
-        {this.props.value}
-        <button onClick={() => this.props.increment()}>+</button>
+      <div className='App'>
+        <p>React Seed</p>
+        <div className='counter'>
+          <button onClick={() => this.props.decrement()}>-</button>
+          {this.props.value}
+          <button onClick={() => this.props.increment()}>+</button>
+        </div>
       </div>
     )
   }
