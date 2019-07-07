@@ -4,7 +4,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import App from './application/index.connected.js'
 import reducer from './reducers'
-import './styles/index.css'
+import './css/index.css'
 
 const store = createStore(reducer)
 

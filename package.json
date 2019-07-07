@@ -4,20 +4,25 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --config ./config/webpack.config.js --mode development",
+    "build": "webpack --config ./config/webpack.config.js",
     "test": "jest"
-  },
-  "jest": {
-    "setupFilesAfterEnv": ["<rootDir>/src/setupTests.js"],
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
-    }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-test-renderer": "^16.8.6",
+    "redux": "^4.0.1"
+  },
   "devDependencies": {
+    "array-includes": "^3.0.3",
     "@babel/core": "^7.5.0",
     "@babel/plugin-proposal-class-properties": "^7.5.0",
     "@babel/plugin-transform-runtime": "^7.5.0",
@@ -30,6 +35,7 @@
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-runtime": "^6.23.0",
     "code": "^5.2.4",
+    "standard": "^12.0.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "file-loader": "^3.0.1",
@@ -41,21 +47,23 @@
     "react-hot-loader": "^4.12.3",
     "sinon": "^7.3.2",
     "style-loader": "^0.23.1",
-    "webpack": "4.35.0",
+    "webpack": "4.35.2",
     "webpack-cli": "3.3.5",
-    "webpack-dev-server": "3.4.1"
+    "webpack-dev-server": "3.7.2"
   },
-  "dependencies": {
-    "array-includes": "^3.0.3",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0",
-    "react-router": "^5.0.1",
-    "react-router-dom": "^5.0.1",
-    "react-test-renderer": "^16.8.6",
-    "redux": "^4.0.1",
-    "standard": "^12.0.1"
+  "babel": {
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": [
+      ["@babel/plugin-proposal-class-properties", { "loose": true }]
+    ]
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   },
   "standard": {
     "parser": "babel-eslint"
