@@ -9,7 +9,9 @@ For now simply clone this repository and install it
 ```bash
 git clone https://github.com/forrestblade/react-seed.git && cd react-seed && npm i && npm start
 ```
+OR
 
+You can click the green "Use this template" button up above to get started!
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
