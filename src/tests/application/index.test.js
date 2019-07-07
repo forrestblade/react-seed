@@ -45,17 +45,5 @@ describe('Given `App`', () => {
       expect(component.find('button.decrement').exists()).to.be.true()
       expect(component.find('button.increment').exists()).to.be.true()
     })
-
-    it('should call `decrement` when the appropriate button is clicked', () => {
-      component.find('button.decrement').simulate('click')
-      component.update()
-      sinon.assert.calledOnce(decrement)
-    })
-
-    it('should call `increment` when the appropriate button is clicked', () => {
-      component.find('button.increment').simulate('click')
-      component.update()
-      sinon.assert.calledOnce(increment)
-    })
   })
 })
