@@ -1,10 +1,10 @@
 # react-seed
 
-react-seed is a project to help people bootstrap projects without CRA.  Technologies like Redux are used for state management and Enzyme is used for testing.
+react-seed is a project to help people bootstrap projects without CRA.  Technologies like Redux are used for state management.  For testing a stack including Jest, Enzyme, Code and Sinon are applied.
 
 ## Installation
 
-For now simple clone this repository and install it
+For now simply clone this repository and install it
 
 ```bash
 git clone https://github.com/forrestblade/react-seed.git && cd react-seed && npm i && npm start
