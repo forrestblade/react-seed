@@ -6,7 +6,13 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js",
-    "test": "jest-webpack"
+    "test": "jest"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["<rootDir>/src/setupTests.js"],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   },
   "keywords": [],
   "author": "",
@@ -17,8 +23,8 @@
     "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
     "@babel/preset-react": "^7.0.0",
-    "@babel/runtime": "^7.5.0",
-    "autoprefixer": "^9.6.0",
+    "@babel/runtime": "^7.5.1",
+    "autoprefixer": "^9.6.1",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.5",
@@ -40,13 +46,16 @@
     "webpack-dev-server": "3.4.1"
   },
   "dependencies": {
+    "array-includes": "^3.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "redux": "^4.0.1"
+    "react-test-renderer": "^16.8.6",
+    "redux": "^4.0.1",
+    "standard": "^12.0.1"
   },
   "standard": {
     "parser": "babel-eslint"

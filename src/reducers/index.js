@@ -5,7 +5,6 @@ const defaultState = {
 }
 
 const incrementValue = (state = defaultState, action) => {
-  console.log(action)
   return {
     ...state,
     value: state.value + 1
