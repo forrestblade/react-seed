@@ -3,7 +3,7 @@ import { expect } from 'code'
 import { shallow } from 'enzyme'
 import sinon from 'sinon'
 import React from 'react'
-import { App } from '../../../src/application/index'
+import { App } from '../../components/index'
 
 describe('Given `App`', () => {
   let component, sandbox, increment, decrement

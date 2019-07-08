@@ -1,10 +1,10 @@
+import './css/index.css'
+import App from './components/index.connected.js'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import React from 'react'
+import reducer from './redux/reducers'
 import { render } from 'react-dom'
-import App from './application/index.connected.js'
-import reducer from './reducers'
-import './css/index.css'
 
 const store = createStore(reducer)
 

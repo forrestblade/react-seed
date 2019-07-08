@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import { expect } from 'code'
-import * as creators from '../../actions/creators'
-import reducer from '../../reducers'
+import * as creators from '../../../redux/actions/creators'
+import reducer from '../../../redux/reducers'
 
 describe('Given a reducer', () => {
   const defaultState = {
