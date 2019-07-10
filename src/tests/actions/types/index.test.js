@@ -1,6 +1,6 @@
 /* eslint-env jest */
 import { expect } from 'code'
-import types from '../../../../redux/actions/types'
+import types from '../../../actions/types'
 
 describe('Action Types', () => {
   it('should use a unique value for each action', () => {

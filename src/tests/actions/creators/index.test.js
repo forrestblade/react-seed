@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import { expect } from 'code'
-import * as creators from '../../../../redux/actions/creators'
-import types from '../../../../redux/actions/types'
+import * as creators from '../../../actions/creators'
+import types from '../../../actions/types'
 
 describe('Given the action creators', () => {
   describe('Given setCategories creator', () => {
