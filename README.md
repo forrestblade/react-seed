@@ -4,7 +4,7 @@ react-seed is a project to help people bootstrap projects without CRA.  Technolo
 
 ## Installation
 
-How you use this repository depends on how you intend to use it.  
+How you install this repository depends on how you intend to use it.  
 
 For personal use simply click [here](https://github.com/forrestblade/react-seed/generate).  Clone your new repository, install it with `npm i` and start hacking!
 
