@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { increment, decrement } from '../redux/actions/creators'
+import { increment, decrement } from '../actions/creators'
 import { App } from './'
 
 function mapStateToProps (state) {
